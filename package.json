@@ -17,8 +17,10 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"files": [
-		"dist"
+		"dist",
+    "./cli.js"
 	],
+  "bin":  "./cli.js",
 	"scripts": {
 		"build": "unbuild",
 		"dev": "vitest dev",
@@ -43,6 +45,8 @@
 	"packageManager": "pnpm@9.7.0",
 	"dependencies": {
 		"consola": "^3.2.3",
-		"parse-git-config": "^3.0.0"
+		"parse-git-config": "^3.0.0",
+		"picocolors": "^1.0.1",
+		"terminal-columns": "^1.4.1"
 	}
 }
